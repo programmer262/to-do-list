@@ -127,13 +127,15 @@
 </head>
 
 <body>
+    <form name="lists" netlify>
     <div id="myDIV" class="header">
         <h2 style="margin:5px">My To Do List</h2>
         <input type="text" id="myInput" placeholder="Title...">
         <span onclick="newElement()" class="addBtn">Add</span>
     </div>
-    <ul id="myUL"></ul>
+    <ul name="lists to do" id="myUL"></ul>
     <h1>If You close this window your gonna lose every informations you store </h1>
+    </form>
     <script>
         // Create a "close" button and append it to each list item
         var myNodelist = document.getElementsByTagName("LI");
